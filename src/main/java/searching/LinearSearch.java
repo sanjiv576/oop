@@ -16,8 +16,4 @@ public class LinearSearch implements Searching{
         return flag;
     }
 
-    @Override
-    public int[] sort(int[] array) {
-        return new int[0];
-    }
 }

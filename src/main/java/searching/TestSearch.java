@@ -1,12 +1,14 @@
 package searching;
 
+import java.util.Arrays;
+
 // execute this
 public class TestSearch {
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5, 6};
+
         int searchValue = 4;
 
-        int[] array = {4, 2, 5, 6, 3, 1};
+        int[] array = { 2, 5, 6, 4, 3, 1};
 
         System.out.println("From Linear Search");
         Searching linearSearch = new LinearSearch();
@@ -17,11 +19,11 @@ public class TestSearch {
             System.out.println("Not found");
         }
 
-        System.out.println("From Binary Search");
+        System.out.println("\nFrom Binary Search");
 
         Sorting binarySearch = new BinarySearch();
-        //int[] sorted = binarySearch.sort(array);
+        int[] sorted = binarySearch.sort(array);
 
-        System.out.println(binarySearch.sort(array));
+        System.out.println(Arrays.toString(sorted));
     }
 }
